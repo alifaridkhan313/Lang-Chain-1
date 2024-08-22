@@ -19,3 +19,18 @@
 --> RAG (Retrieval Augmented Generation)
     RAG architecture: Load --> Split --> Embed (vectorstore) --> store
 --> Agents
+--> RAG Pipelinne: 
+    1) Load Source Data(Data Ingestion) --based on llm context size(load, transform, embed)--> Vectore store(database) --Embed-->
+    2) Query vector store
+    3) Retrieve most similar 
+--> chain: A chain is a series of automated actions from the user's query to the model's output
+--> Retrievers: A retriever is an interface that returns documents given
+        an unstructured query. It is more general than a vector store.
+        A retriever does not need to be able to store documents, only to 
+        return (or retrieve) them. Vector stores can be used as the backbone
+        of a retriever, but there are other types of retrievers as well. 
+        https://python.langchain.com/docs/modules/data_connection/retrievers/  
+--> Retrieval chain:This chain takes in a user inquiry, which is then
+        passed to the retriever to fetch relevant documents. Those documents 
+        (and original inputs) are then passed to an LLM to generate a response
+        https://python.langchain.com/docs/modules/chains/
