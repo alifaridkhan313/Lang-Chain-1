@@ -1,0 +1,21 @@
+###Concepts:
+--> Building LLM models is already a rat race by tech giants, so we dont need to compete with them. 
+    we just need to perform well with our models and understand the concepts. 
+    We dont need to worry. 
+--> In template we will write client side code.
+--> Lang Chain community is used for third party.
+
+###Common terminologies: 
+--> LangSmith: A developer platform that lets you debug, test, evaluate, and monitor chains built on any LLM framework and seamlessly integrates with LangChain.
+--> LangServe: A library for deploying LangChain chains as a REST API. (py)
+--> LangChain Templates: A collection of easily deployable reference architectures for a wide variety of tasks. (py)
+--> LangChain Expression Language (LCEL): is a declarative way to compose chains. LCEL was designed from day 1 to support putting prototypes in production, with no code changes, from the simplest “prompt + LLM” chain to the most complex chains.
+--> Model I/O: Interface with language models
+--> Retrieval: Interface with application-specific data
+--> Agents: Let models choose which tools to use given high-level directives
+
+###Use cases: 
+--> Document Q&A
+--> RAG (Retrieval Augmented Generation)
+    RAG architecture: Load --> Split --> Embed (vectorstore) --> store
+--> Agents
