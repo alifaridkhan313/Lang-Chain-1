@@ -48,12 +48,12 @@ def vector_embedding():
         st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings) #vector OpenAI embeddings
 
 
-prompt1 = st.text_input("Enter Your Question from documents")
+prompt1 = st.text_input("Enter your question/query from documents")
 
 
 if st.button("Documents embedding"):
     vector_embedding()
-    st.write("Vector store Database is ready")
+    st.write("Vector store database is ready")
 
 
 if prompt1:
